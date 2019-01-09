@@ -1,0 +1,35 @@
+pres
+========================================================
+author: jwolpers123
+date: 9th January 2019
+autosize: true
+
+Whats does the app do?
+========================================================
+
+The app is computing the area under a standard normal distribution set by the user threw using the double slider.
+
+Computing the area
+========================================================
+
+Lets say the slider points at -0.3 and 0.5. The are under this is:
+
+```{r example}
+##AreaInt<-reactive({
+    a<--0.3 ##input$sliderX[1]
+    b<-0.5 ##input$sliderX[2]
+    pnorm(b)-pnorm(a)
+    ##)}
+```
+
+Plotting the SND
+========================================================
+
+The area under the plot will be visualized, its interactive and will react to the slide in realtime
+
+Why isnt it adding up to 1?
+========================================================
+Because the slider would have to be expandend into infinity
+
+
+
